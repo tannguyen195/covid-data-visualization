@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/covid-data-visualization/static/css/main.0ef66bc4.chunk.css",
+    "main.js": "/covid-data-visualization/static/js/main.9acd3561.chunk.js",
+    "main.js.map": "/covid-data-visualization/static/js/main.9acd3561.chunk.js.map",
+    "runtime-main.js": "/covid-data-visualization/static/js/runtime-main.91fb5edf.js",
+    "runtime-main.js.map": "/covid-data-visualization/static/js/runtime-main.91fb5edf.js.map",
+    "static/js/2.d5366a92.chunk.js": "/covid-data-visualization/static/js/2.d5366a92.chunk.js",
+    "static/js/2.d5366a92.chunk.js.map": "/covid-data-visualization/static/js/2.d5366a92.chunk.js.map",
+    "static/js/3.8dc0cf66.chunk.js": "/covid-data-visualization/static/js/3.8dc0cf66.chunk.js",
+    "static/js/3.8dc0cf66.chunk.js.map": "/covid-data-visualization/static/js/3.8dc0cf66.chunk.js.map",
+    "index.html": "/covid-data-visualization/index.html",
+    "static/css/main.0ef66bc4.chunk.css.map": "/covid-data-visualization/static/css/main.0ef66bc4.chunk.css.map",
+    "static/js/2.d5366a92.chunk.js.LICENSE.txt": "/covid-data-visualization/static/js/2.d5366a92.chunk.js.LICENSE.txt",
+    "static/media/rings.f85f7656.svg": "/covid-data-visualization/static/media/rings.f85f7656.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91fb5edf.js",
+    "static/js/2.d5366a92.chunk.js",
+    "static/css/main.0ef66bc4.chunk.css",
+    "static/js/main.9acd3561.chunk.js"
+  ]
+}
