@@ -1,21 +1,31 @@
 {
+  "homepage": "http://tannguyen195.github.io/covid-data-visualization",
   "name": "covid-data-visualization",
   "version": "0.1.0",
+  "author": "Tan Nguyen <tan.nguyen19596@gmail.com>",
   "private": true,
   "dependencies": {
+    "@react-three/drei": "^7.13.1",
+    "@react-three/fiber": "^7.0.12",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "chroma-js": "^2.1.2",
+    "lerp": "^1.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "three": "^0.133.1",
+    "web-vitals": "^1.0.1",
+    "zustand": "^3.5.13"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

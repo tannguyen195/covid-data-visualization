@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+canvas {
+  outline: none;
+  border: none;
 }
+/**Color Scale Styling**/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-scale {
+  position: absolute;
+  z-index: 10;
+  right: 2vw;
+  top: 3vh;
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.color-bar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.scale-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.color:first-child {
+  border-radius: 2px 2px 0 0;
+}
+
+.color:last-child {
+  border-radius: 0px 0px 2px 2px;
+}
+h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 12px;
+}
+/****/
+
+/**Statistic Panel Styling**/
+.statistic-panel {
+  position: absolute;
+  z-index: 10;
+  bottom: 3vh;
+  right: 2vw;
+  display: flex;
+  align-items: flex-end;
+}
+
+table {
+  width: 100%;
+}
+tbody,
+thead {
+  display: flex;
+}
+tr {
+  display: flex;
+  flex-direction: column;
+}
+/****/
+
+/**Table Styling**/
+.tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tbl-content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.tr-header {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td {
+  cursor: pointer;
+  padding: 15px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/****/
+
+/**Scroll bar  Styling**/
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px none;
+  background-color: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/****/
+
+/** Reset camera butotn Styling**/
+
+button {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0;
   color: white;
+  font-weight: 600;
+  margin-right: 10px;
+}
+button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/****/
+
+/* Responsive Setting */
+@media only screen and (max-width: 600px) {
+  .statistic-panel {
+    display: none;
+  }
+}
+/****/
+
+/* Fallback styling */
+.fallback {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #232323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.loader {
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  color: white;
+  font-weight: 200;
+  font-size: 40px;
 }
+/****/
