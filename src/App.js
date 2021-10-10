@@ -50,7 +50,6 @@ const App = () => {
           gl.setClearColor("#659dbd");
         }}
       >
-        <axesHelper />
         <Stats />
         <OrbitControls attach="orbitControls" />
         <Lights />
