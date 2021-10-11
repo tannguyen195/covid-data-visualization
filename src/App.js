@@ -41,13 +41,15 @@ const App = () => {
       <Canvas
         dpr={[1, 1.5]}
         shadows
-        shadowMap={THREE.PCFSoftShadowMap}
         camera={{
           position: [18, 19, 36],
           fov: 30,
         }}
+        colorManagement
         onCreated={({ gl }) => {
           gl.setClearColor("#659dbd");
+          gl.shadowMap.autoUpdate = false;
+          gl.shadowMap.needsUpdate = true;
         }}
       >
         <Stats />

@@ -55,7 +55,6 @@ function Province({ name, geometry, position, color, province }) {
         hovered={hovered}
       />
       <mesh
-        castShadow
         receiveShadow
         geometry={geometry}
         material={
